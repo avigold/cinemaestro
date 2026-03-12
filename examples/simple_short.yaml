@@ -1,0 +1,11 @@
+# Example: Minimal story concept for a 60-second short film
+#
+# Usage:
+#   cinemaestro new "A lonely astronaut discovers a garden growing in the wreckage of an alien ship" \
+#     --duration 60 --genre "sci-fi" --tone "wonder" --style "photorealistic cinematic"
+
+concept: "A lonely astronaut discovers a garden growing in the wreckage of an alien ship"
+duration: 60
+genre: "sci-fi"
+tone: "contemplative wonder"
+style: "photorealistic cinematic, anamorphic lens"

@@ -1,0 +1,52 @@
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+.eggs/
+*.egg
+
+.env
+.env.*
+!.env.example
+
+.venv/
+venv/
+env/
+
+.mypy_cache/
+.ruff_cache/
+.pytest_cache/
+
+*.mp4
+*.wav
+*.mp3
+*.flac
+*.ogg
+*.npy
+*.onnx
+*.safetensors
+*.ckpt
+*.pt
+*.pth
+*.bin
+
+# Project workspace outputs (large files)
+projects/*/shots/
+projects/*/audio/
+projects/*/assembly/
+projects/*/export/
+projects/*/characters/*/lora/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+
+# Claude Code
+.claude/

@@ -1,0 +1,46 @@
+# Cinemaestro config: Premium cloud pipeline (best quality)
+# Requires: API keys for Anthropic, Kling, Runway, ElevenLabs, Stability AI
+
+[story]
+llm_provider = "anthropic"
+model = "claude-sonnet-4-20250514"
+temperature = 0.8
+
+[visual]
+default_provider = "kling"
+fallback_provider = "runway"
+character_consistency_strategy = "native"
+
+[visual.providers.kling]
+enabled = true
+default_model = "kling-v2"
+max_concurrent = 3
+timeout_seconds = 300
+
+[visual.providers.runway]
+enabled = true
+default_model = "gen4_turbo"
+max_concurrent = 3
+timeout_seconds = 300
+
+[visual.providers.fal]
+enabled = true
+default_model = "fal-ai/flux/dev"
+max_concurrent = 5
+
+[audio.tts]
+provider = "elevenlabs"
+
+[audio.tts.providers.elevenlabs]
+enabled = true
+
+[audio.music]
+provider = "stable_audio"
+
+[audio.music.providers.stable_audio]
+enabled = true
+
+[consistency]
+enabled = true
+face_similarity_threshold = 0.55
+auto_repair = true

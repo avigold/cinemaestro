@@ -1,0 +1,434 @@
+title: "The Explorers"
+logline: "A 60-second cinematic piece tracing humanity's pattern of transcending tools to
+  reimagine what's possible — from the printing press to AI."
+genre: "inspirational"
+tone: "epic, intimate, uplifting"
+style: "photorealistic cinematic, anamorphic lens, shallow depth of field"
+target_duration_seconds: 62.0
+aspect_ratio: "16:9"
+color_grade: "warm golden highlights, rich shadows, cinematic teal and amber"
+music_theme: "solo piano opening, gradually building to full orchestral strings, emotionally
+  soaring finale"
+
+characters:
+  - character_id: narrator
+    name: Narrator
+    physical_description: "voice only, never seen"
+    wardrobe: ""
+    distinguishing_features: ""
+
+locations:
+  - location_id: printing_press
+    name: Gutenberg's Workshop
+    description: "15th century European workshop, wooden beams, candlelight, a large
+      wooden printing press dominating the room, scattered parchment"
+    style_notes: "warm amber candlelight, dust particles in the air, chiaroscuro lighting"
+  - location_id: grand_library
+    name: Grand Public Library
+    description: "vast ornate library with soaring ceilings, tall arched windows streaming
+      golden sunlight, endless shelves of books"
+    style_notes: "cathedral-like grandeur, volumetric light rays, warm tones"
+  - location_id: edison_lab
+    name: Edison's Laboratory
+    description: "late 19th century inventor's lab, cluttered workbench, glass bulbs and
+      wires, tools scattered, a single light bulb mounted in a fixture"
+    style_notes: "dark room with single warm light source, intimate, revolutionary moment"
+  - location_id: city_night
+    name: City at Night
+    description: "sweeping aerial view of a vast modern city at night, millions of lights
+      stretching to the horizon"
+    style_notes: "electric blue and amber, vast scale, awe-inspiring"
+  - location_id: mountain_storm
+    name: Mountain Range in Storm
+    description: "dramatic mountain range with storm clouds racing overhead, shafts of
+      golden light breaking through, epic scale"
+    style_notes: "dramatic chiaroscuro, volumetric god rays, epic landscape"
+  - location_id: river_canyon
+    name: River Canyon
+    description: "powerful river cutting through a deep red rock canyon, white water rapids,
+      towering canyon walls"
+    style_notes: "golden hour light on red rock, turquoise water, raw natural power"
+  - location_id: redwood_forest
+    name: Redwood Forest to Stars
+    description: "ancient towering redwood forest, camera looking straight up through
+      massive tree canopy, with a star-filled sky visible above"
+    style_notes: "deep greens and blacks, shafts of light, mystical ancient atmosphere"
+  - location_id: mountain_dawn
+    name: Mountain Ridge at Dawn
+    description: "a lone silhouette figure standing on a mountain ridge as dawn breaks,
+      light spilling over the horizon, vast landscape below"
+    style_notes: "golden dawn light, silhouette, epic scale and solitude"
+  - location_id: ocean_golden
+    name: Ocean at Golden Hour
+    description: "vast open ocean at golden hour, light sparkling across the water"
+    style_notes: "warm golden, vast, serene power"
+  - location_id: aurora
+    name: Northern Lights
+    description: "vivid green and purple aurora borealis dancing across a dark sky
+      over a frozen lake, reflections shimmering in still water"
+    style_notes: "otherworldly color, stillness, vast beauty"
+  - location_id: canyon_waterfall
+    name: Canyon with Waterfalls
+    description: "a narrow lush canyon with multiple waterfalls cascading down moss-covered
+      walls, mist rising, sunbeams cutting through"
+    style_notes: "lush green, mist, ethereal light"
+  - location_id: wilderness_aerial
+    name: Untouched Wilderness
+    description: "vast untouched wilderness stretching to the horizon, forests and rivers
+      and mountains, no signs of civilization"
+    style_notes: "epic aerial, golden hour, limitless"
+  - location_id: cloud_sunrise
+    name: Sunrise Above the Clouds
+    description: "sunrise seen from above the clouds, golden light spilling across a vast
+      cloudscape, as if standing on a mountaintop at the edge of the world"
+    style_notes: "warm gold and white, transcendent, infinite"
+  - location_id: black_void
+    name: Black Screen
+    description: "pure black background for text overlay"
+    style_notes: "absolute black"
+
+acts:
+  - act_number: 1
+    title: "The Pattern"
+    scenes:
+      - scene_id: act1_s1
+        scene_number: 1
+        title: "The Printing Press"
+        description: "Gutenberg's revolution — they saw a faster pen, he saw universal
+          literacy."
+        location_id: printing_press
+        time_of_day: "evening"
+        mood: "reverent, intimate"
+        music_direction: "single low piano note, sustained, resonant"
+        shots:
+          - shot_id: act1_s1_shot1
+            shot_type: extreme_close_up
+            camera_movement: dolly_out
+            duration_seconds: 4.0
+            visual_description: "extreme close-up of ink-stained hands carefully pulling a
+              freshly printed sheet from a wooden printing press, ink glistening wet on
+              the page, candlelight catching the texture of the paper"
+            characters_present: []
+            dialogue:
+              - character_id: narrator
+                text: "They told Gutenberg he'd made a faster pen."
+                emotion: "thoughtful"
+                direction: "(measured, warm)"
+            sound_effects:
+              - description: "wooden press mechanism creaking"
+                intensity: 0.4
+            mood: "intimate wonder"
+            lighting: "warm candlelight, chiaroscuro"
+            location_id: printing_press
+            time_of_day: "evening"
+            transition_in: fade_in
+            transition_out: cut
+
+          - shot_id: act1_s1_shot2
+            shot_type: extreme_wide
+            camera_movement: crane_up
+            duration_seconds: 3.5
+            visual_description: "vast ornate public library, soaring ceilings with arched
+              windows, golden sunlight streaming through in dramatic volumetric rays,
+              endless shelves of books stretching into the distance, dust motes
+              floating in the light"
+            characters_present: []
+            dialogue:
+              - character_id: narrator
+                text: "He'd made a world that could read."
+                emotion: "wonder"
+                direction: "(quiet awe)"
+            sound_effects: []
+            mood: "awe, grandeur"
+            lighting: "golden hour sunlight streaming through tall windows"
+            location_id: grand_library
+            time_of_day: "afternoon"
+            transition_in: cut
+            transition_out: cut
+
+      - scene_id: act1_s2
+        scene_number: 2
+        title: "The Light Bulb"
+        description: "Edison's revolution — they saw a better candle, he saw a world
+          transformed."
+        location_id: edison_lab
+        time_of_day: "night"
+        mood: "intimate, transformative"
+        music_direction: "piano continues, a second note joins, subtle warmth building"
+        shots:
+          - shot_id: act1_s2_shot1
+            shot_type: extreme_close_up
+            camera_movement: static
+            duration_seconds: 3.5
+            visual_description: "extreme close-up of a carbon filament inside a glass bulb,
+              the moment it sparks to life, warm orange glow spreading across the glass,
+              reflections dancing in the darkness"
+            characters_present: []
+            dialogue:
+              - character_id: narrator
+                text: "They told Edison he'd made a better candle."
+                emotion: "knowing"
+                direction: "(slight smile in the voice)"
+            sound_effects:
+              - description: "electrical hum and crackle of filament igniting"
+                intensity: 0.3
+            mood: "wonder, transformation"
+            lighting: "single warm light source emanating from the bulb itself"
+            location_id: edison_lab
+            time_of_day: "night"
+            transition_in: cut
+            transition_out: cut
+
+          - shot_id: act1_s2_shot2
+            shot_type: aerial
+            camera_movement: crane_up
+            duration_seconds: 3.5
+            visual_description: "breathtaking aerial view of a sprawling city at night,
+              millions of lights creating rivers of gold and white, skyscrapers glowing,
+              streets pulsing with life, the electric grid visible as a living network
+              of light stretching to the horizon"
+            characters_present: []
+            dialogue:
+              - character_id: narrator
+                text: "He'd made a world that never had to sleep."
+                emotion: "awe"
+                direction: "(expansive, grand)"
+            sound_effects: []
+            mood: "epic scale, wonder"
+            lighting: "city lights against dark sky, electric amber and cool blue"
+            location_id: city_night
+            time_of_day: "night"
+            transition_in: cut
+            transition_out: dissolve
+
+  - act_number: 2
+    title: "The Present"
+    scenes:
+      - scene_id: act2_s1
+        scene_number: 3
+        title: "The Inflection Point"
+        description: "The modern moment — the tools are here, but the ambition hasn't
+          caught up. The brave thing is to look up."
+        location_id: mountain_storm
+        time_of_day: "day"
+        mood: "reflective, building tension"
+        music_direction: "piano becomes contemplative, slight tension, strings entering
+          softly underneath"
+        shots:
+          - shot_id: act2_s1_shot1
+            shot_type: extreme_wide
+            camera_movement: tracking
+            duration_seconds: 4.0
+            visual_description: "dramatic time-lapse of massive storm clouds racing over
+              a mountain range, shafts of golden sunlight breaking through gaps in the
+              clouds, light and shadow sweeping across valleys, everything moving fast,
+              raw elemental power"
+            characters_present: []
+            dialogue:
+              - character_id: narrator
+                text: "Every generation gets a moment where the tools outpace the ambition."
+                emotion: "serious"
+                direction: "(weight, gravitas)"
+            sound_effects:
+              - description: "deep wind rushing over mountain peaks"
+                intensity: 0.4
+            mood: "restless, powerful, searching"
+            lighting: "dramatic god rays through storm clouds"
+            location_id: mountain_storm
+            time_of_day: "day"
+            transition_in: dissolve
+            transition_out: cut
+
+          - shot_id: act2_s1_shot2
+            shot_type: aerial
+            camera_movement: tracking
+            duration_seconds: 3.5
+            visual_description: "aerial view racing over white water rapids cutting through
+              a deep red rock canyon, the river powerful and relentless, turquoise water
+              against ancient red stone walls, following the current downstream"
+            characters_present: []
+            dialogue:
+              - character_id: narrator
+                text: "Where the easy thing is to move faster."
+                emotion: "reflective"
+                direction: "(quiet challenge)"
+            sound_effects:
+              - description: "rushing water echoing off canyon walls"
+                intensity: 0.4
+            mood: "raw speed, gravity, momentum"
+            lighting: "golden hour light on red canyon walls"
+            location_id: river_canyon
+            time_of_day: "golden_hour"
+            transition_in: cut
+            transition_out: cut
+
+          - shot_id: act2_s1_shot3
+            shot_type: extreme_wide
+            camera_movement: tilt_up
+            duration_seconds: 4.0
+            visual_description: "camera starts on the mossy floor of an ancient redwood forest,
+              then slowly tilts straight up through massive towering tree trunks,
+              through layers of canopy, through gaps in the leaves, until it reveals
+              a brilliant star-filled night sky above the treetops,
+              the Milky Way blazing across the darkness"
+            characters_present: []
+            dialogue:
+              - character_id: narrator
+                text: "And the brave thing... is to look up."
+                emotion: "building"
+                direction: "(the turn, conviction entering)"
+            sound_effects:
+              - description: "forest ambient sounds fading to pure silence of space"
+                intensity: 0.3
+            mood: "transcendent, pivotal"
+            lighting: "dark forest floor to brilliant starlight above"
+            location_id: redwood_forest
+            time_of_day: "night"
+            transition_in: cut
+            transition_out: cut
+
+  - act_number: 3
+    title: "The Call"
+    scenes:
+      - scene_id: act3_s1
+        scene_number: 4
+        title: "Here's to the Explorers"
+        description: "The emotional crescendo — a single continuous visual journey
+          from mountain summit through clouds into the infinite, mirroring
+          the narrator's toast to those who refuse to think small."
+        location_id: mountain_dawn
+        time_of_day: "dawn"
+        mood: "soaring, triumphant"
+        music_direction: "full orchestral strings enter, soaring, emotionally overwhelming,
+          piano still anchoring underneath, building to climax"
+        shots:
+          - shot_id: act3_s1_shot1
+            shot_type: extreme_wide
+            camera_movement: dolly_in
+            duration_seconds: 5.0
+            visual_description: "a tiny lone silhouette of a person standing on the edge
+              of a mountain ridge at dawn, arms slightly out, first golden light of
+              sunrise breaking over the horizon behind them, vast landscape of peaks
+              and valleys stretching below into mist, the scale is immense,
+              camera slowly pushing forward toward the figure"
+            characters_present: []
+            dialogue:
+              - character_id: narrator
+                text: "Here's to the explorers. The ones who hear 'it can't be done'
+                  and ask 'why has no one tried?'"
+                emotion: "passionate"
+                direction: "(full voice now, the toast)"
+            sound_effects:
+              - description: "gentle high-altitude wind"
+                intensity: 0.2
+            mood: "triumph, solitude, beauty"
+            lighting: "golden dawn backlight, silhouette"
+            location_id: mountain_dawn
+            time_of_day: "dawn"
+            transition_in: cut
+            transition_out: dissolve
+
+          - shot_id: act3_s1_shot2
+            shot_type: aerial
+            camera_movement: crane_up
+            duration_seconds: 5.0
+            visual_description: "continuous ascending drone shot beginning in swirling
+              mountain mist, rising steadily upward past rocky peaks emerging from
+              the clouds, breaking through a layer of white clouds into brilliant
+              golden sunrise light above, the camera keeps rising as the cloud layer
+              falls away below revealing an infinite golden cloudscape stretching
+              to the horizon, the sun blazing ahead, a feeling of breaking through
+              into something limitless"
+            characters_present: []
+            dialogue: []
+            sound_effects:
+              - description: "wind building then fading to pure open-air silence"
+                intensity: 0.3
+            mood: "transcendence, breakthrough, limitless possibility"
+            lighting: "misty grey to brilliant golden sunrise above clouds"
+            location_id: cloud_sunrise
+            time_of_day: "dawn"
+            transition_in: dissolve
+            transition_out: cut
+
+      - scene_id: act3_s2
+        scene_number: 5
+        title: "The Question"
+        description: "The final beat — the question posed directly. The tools are ready,
+          now it's personal. Ends on a human face."
+        location_id: cloud_sunrise
+        time_of_day: "dawn"
+        mood: "resolute, intimate, powerful"
+        music_direction: "strings sustain at peak, then begin to resolve, warmth and
+          certainty, final notes becoming intimate"
+        shots:
+          - shot_id: act3_s2_shot1
+            shot_type: extreme_wide
+            camera_movement: static
+            duration_seconds: 4.0
+            visual_description: "sunrise breaking through clouds seen from above, as if
+              standing on the highest peak in the world, golden light spilling
+              across a vast cloudscape below, the first rays reaching out across
+              the earth, everything bathed in warm transcendent light"
+            characters_present: []
+            dialogue:
+              - character_id: narrator
+                text: "The tools are ready."
+                emotion: "certain"
+                direction: "(quiet power)"
+            sound_effects: []
+            mood: "transcendent, infinite"
+            lighting: "pure golden sunrise, above the clouds"
+            location_id: cloud_sunrise
+            time_of_day: "dawn"
+            transition_in: cut
+            transition_out: cut
+
+          - shot_id: act3_s2_shot2
+            shot_type: medium_close
+            camera_movement: static
+            duration_seconds: 4.0
+            visual_description: "a confident woman in a modern office, soft natural window
+              light from the left, she looks directly into the camera with a warm
+              genuine smile, intelligent eyes, clean simple background slightly
+              out of focus, she is wearing a simple dark blazer, the shot is
+              still and composed like a portrait photograph, warm skin tones,
+              no text or graphics"
+            characters_present: []
+            dialogue:
+              - character_id: narrator
+                text: "What's worth building?"
+                emotion: "intimate"
+                direction: "(almost a whisper, landing the question)"
+            sound_effects: []
+            mood: "personal, direct, empowering"
+            lighting: "soft natural window light, warm, flattering"
+            location_id: black_void
+            time_of_day: "day"
+            transition_in: cut
+            transition_out: fade_to_black
+
+      - scene_id: act3_s3
+        scene_number: 6
+        title: "The Card"
+        description: "Black screen with title card."
+        location_id: black_void
+        time_of_day: "night"
+        mood: "still, resonant"
+        music_direction: "final piano chord, sustaining, fading to silence"
+        shots:
+          - shot_id: act3_s3_shot1
+            shot_type: medium
+            camera_movement: static
+            duration_seconds: 4.0
+            visual_description: "black screen, white text fades in center: THINK BIGGER
+              then smaller text below: Protection Products & Services"
+            characters_present: []
+            dialogue: []
+            sound_effects: []
+            mood: "still, powerful"
+            lighting: "none, pure black with white text"
+            location_id: black_void
+            time_of_day: "night"
+            transition_in: fade_in
+            transition_out: fade_out

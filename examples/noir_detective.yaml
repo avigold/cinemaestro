@@ -1,0 +1,27 @@
+# Example: Full noir detective short film — 3 minutes
+#
+# Usage:
+#   cinemaestro new "A jaded private detective in 1947 Los Angeles receives a visit from a mysterious woman who claims her husband didn't die in the war — he was erased. As the detective investigates, he discovers a conspiracy that reaches into the highest levels of the city." \
+#     --duration 180 --genre "noir" --tone "gritty cynical" --style "cinematic noir, high contrast, rain-soaked"
+
+concept: >
+  A jaded private detective in 1947 Los Angeles receives a visit from a
+  mysterious woman who claims her husband didn't die in the war — he was erased.
+  As the detective investigates, he discovers a conspiracy that reaches into
+  the highest levels of the city.
+
+duration: 180
+genre: "film noir"
+tone: "gritty, cynical, atmospheric"
+style: "cinematic noir, high contrast black and white with selective color, rain-soaked streets, venetian blind shadows"
+
+characters:
+  - id: detective_miles
+    name: "Miles Donovan"
+    description: "weathered man in his 40s, stubble, fedora, rumpled trench coat, world-weary eyes"
+    voice: "deep gravelly baritone, laconic delivery"
+
+  - id: vivian_hartley
+    name: "Vivian Hartley"
+    description: "striking woman in her 30s, dark hair pinned up, red lipstick, elegant black dress, pearl necklace"
+    voice: "smooth controlled alto, hint of desperation underneath"

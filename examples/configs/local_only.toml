@@ -1,0 +1,34 @@
+# Cinemaestro config: Local-only pipeline (no API keys needed)
+# Requires: ComfyUI running locally, XTTS-v2, MusicGen
+
+[story]
+llm_provider = "anthropic"
+model = "claude-sonnet-4-20250514"
+
+[visual]
+default_provider = "comfyui"
+fallback_provider = "comfyui"
+character_consistency_strategy = "first_frame"
+
+[visual.providers.comfyui]
+enabled = true
+base_url = "http://127.0.0.1:8188"
+max_concurrent = 2
+timeout_seconds = 600
+
+[audio.tts]
+provider = "xtts"
+
+[audio.tts.providers.xtts]
+enabled = true
+
+[audio.music]
+provider = "audiocraft"
+
+[audio.music.providers.audiocraft]
+enabled = true
+
+[consistency]
+enabled = true
+face_similarity_threshold = 0.55
+auto_repair = true

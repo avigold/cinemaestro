@@ -1,0 +1,13 @@
+# Cinemaestro project-level configuration
+
+[story]
+llm_provider = "anthropic"
+model = "claude-sonnet-4-20250514"
+
+[visual]
+default_provider = "fal"
+fallback_provider = "comfyui"
+character_consistency_strategy = "first_frame"
+
+[audio.tts]
+provider = "elevenlabs"
