@@ -1,0 +1,1070 @@
+title: "Synergy! — The Music Video"
+logline: "A satirical corporate-punk music video that visualizes buzzword culture as an
+  absurdist dystopia — slick boardrooms devolve into chaos, motivational posters bleed,
+  and a lone worker breaks free."
+genre: "comedy, satire"
+tone: "deadpan corporate to unhinged punk, escalating absurdity"
+style: "photorealistic cinematic with surrealist elements, handheld energy during
+  choruses, locked-off symmetry during verses, Wes Anderson meets Fight Club"
+target_duration_seconds: 235.0
+aspect_ratio: "16:9"
+color_grade: "sterile fluorescent cool tones for office scenes, increasingly saturated
+  and distorted as the song escalates, full blown neon chaos by final chorus"
+music_theme: "pre-recorded track — corporate buzzword anthem, punk-rock energy with
+  satirical lyrics"
+
+characters:
+  - character_id: protagonist
+    name: The Employee
+    physical_description: "mid-30s, any ethnicity, tired but sharp eyes, the kind of
+      face that's been in too many meetings"
+    wardrobe: "crisp white button-down shirt (progressively loosened/disheveled through
+      the video), grey slacks, lanyard with badge"
+    distinguishing_features: "coffee-stained shirt cuff, thousand-yard meeting stare
+      that gradually transforms into manic energy"
+
+  - character_id: boss
+    name: The Synergy Evangelist
+    physical_description: "50s, immaculate grooming, unnervingly white teeth, power
+      stance at all times"
+    wardrobe: "navy suit, motivational speaker headset mic, TED-talk casual blazer
+      over company t-shirt"
+    distinguishing_features: "never stops gesturing, always pointing at invisible
+      charts, finger-guns between every sentence"
+
+  - character_id: choir
+    name: The Corporate Choir
+    physical_description: "group of 6-8 office workers, diverse, all wearing matching
+      company polos, dead-eyed but smiling"
+    wardrobe: "matching company-branded polo shirts, khakis, lanyards"
+    distinguishing_features: "synchronized head nodding, identical forced smiles,
+      move in perfect unison like a cult"
+
+locations:
+  - location_id: boardroom
+    name: The Boardroom
+    description: "sterile modern corporate boardroom, long glass table, ergonomic
+      chairs, massive TV showing a pie chart, motivational poster on the wall
+      reading 'SYNERGY IS A TEAM SPORT', fluorescent overhead lighting"
+    style_notes: "cold fluorescent, symmetrical framing, oppressively clean"
+
+  - location_id: open_office
+    name: The Open-Plan Office
+    description: "vast open-plan office with rows of identical standing desks,
+      monitors showing Slack notifications, sticky notes everywhere, a sad
+      succulent on every desk, overhead fluorescent tubes"
+    style_notes: "wide shots emphasizing the grid pattern, dehumanizing scale"
+
+  - location_id: breakroom
+    name: The Break Room
+    description: "depressing corporate break room, humming vending machine,
+      microwave with suspicious stains, motivational poster reading
+      'THERE IS NO I IN TEAM BUT THERE IS IN WIN', single sad chair"
+    style_notes: "sickly fluorescent, slightly underexposed, loneliness"
+
+  - location_id: elevator
+    name: The Elevator
+    description: "cramped corporate elevator, brushed steel walls, floor indicator
+      lights, awkward proximity"
+    style_notes: "claustrophobic, tight framing, unflattering overhead light"
+
+  - location_id: stage
+    name: The All-Hands Stage
+    description: "corporate all-hands meeting stage with massive LED screen behind
+      it showing 'Q3 SYNERGY INITIATIVE', podium with company logo, fog machine,
+      laser lights that look borrowed from a nightclub"
+    style_notes: "over-the-top corporate event lighting, fog, lasers, absurd grandeur"
+
+  - location_id: parking_lot
+    name: The Parking Lot
+    description: "empty corporate parking lot at golden hour, a single car remaining,
+      the corporate building looming behind, freedom ahead"
+    style_notes: "warm golden hour vs cold building, liberation"
+
+  - location_id: cubicle_maze
+    name: The Cubicle Labyrinth
+    description: "impossible M.C. Escher-like maze of cubicle walls, stretching in
+      all directions, papers floating, phones ringing endlessly"
+    style_notes: "surrealist, disorienting angles, infinite repetition"
+
+  - location_id: rooftop
+    name: The Corporate Rooftop
+    description: "rooftop of the corporate building at sunset, city skyline behind,
+      wind blowing, protagonist alone at the edge looking out"
+    style_notes: "epic wide shot, golden light, freedom and possibility"
+
+acts:
+  - act_number: 1
+    title: "The Grind"
+    scenes:
+      # ── INTRO (4.0-12.6s) ──
+      - scene_id: intro
+        scene_number: 1
+        title: "Temperature Check"
+        description: "Establishing the corporate prison. The Employee arrives at
+          another soul-crushing day. Everything is sterile, symmetrical, oppressive."
+        location_id: open_office
+        time_of_day: "morning"
+        mood: "deadpan, suffocating normalcy"
+        music_direction: "spoken-word intro over minimal beat, building tension"
+        shots:
+          - shot_id: intro_shot1
+            shot_type: extreme_wide
+            camera_movement: dolly_in
+            duration_seconds: 3.0
+            visual_description: "symmetrical God's-eye-view of the open-plan office,
+              rows of identical desks stretching to vanishing point, one figure
+              (the Employee) walking through the center aisle, coffee in hand,
+              fluorescent lights humming overhead"
+            characters_present: [protagonist]
+            dialogue: []
+            sound_effects:
+              - description: "fluorescent light buzz, distant keyboard clacking"
+                intensity: 0.3
+            mood: "institutional dread"
+            lighting: "cold overhead fluorescent, no shadows"
+            location_id: open_office
+            time_of_day: "morning"
+            transition_in: fade_in
+            transition_out: cut
+
+          - shot_id: intro_shot2
+            shot_type: medium_close
+            camera_movement: static
+            duration_seconds: 2.5
+            visual_description: "the Employee sits at their desk, puts on headphones,
+              stares at a screen full of meeting invites, takes a slow sip of coffee,
+              eyes dead, lip-syncing 'Quick temperature check' with zero emotion"
+            characters_present: [protagonist]
+            dialogue: []
+            sound_effects:
+              - description: "Outlook calendar notification chime"
+                intensity: 0.2
+            mood: "resigned acceptance"
+            lighting: "monitor glow on face, fluorescent overhead"
+            location_id: open_office
+            time_of_day: "morning"
+            transition_in: cut
+            transition_out: cut
+
+          - shot_id: intro_shot3
+            shot_type: medium
+            camera_movement: pan
+            duration_seconds: 3.5
+            visual_description: "slow pan across a row of motivational posters on
+              the wall — 'DISRUPT THE STATUS QUO', 'BE A ROCKSTAR', 'PIVOT OR DIE'
+              — each more absurd than the last, camera landing on the Employee
+              mouthing 'Alright team, get the ball rolling' as they walk toward
+              the boardroom"
+            characters_present: [protagonist]
+            dialogue: []
+            sound_effects: []
+            mood: "mounting absurdity"
+            lighting: "fluorescent, poster colors slightly oversaturated"
+            location_id: open_office
+            time_of_day: "morning"
+            transition_in: cut
+            transition_out: cut
+
+      # ── VERSE 1 (24.8-49.0s) ──
+      - scene_id: verse1
+        scene_number: 2
+        title: "The Meeting"
+        description: "The boardroom meeting from hell. Every corporate cliché
+          made visual. The Boss delivers buzzwords like a preacher."
+        location_id: boardroom
+        time_of_day: "morning"
+        mood: "escalating absurdity, deadpan comedy"
+        music_direction: "verse groove kicks in, driving beat, punk energy building"
+        shots:
+          - shot_id: v1_shot1
+            shot_type: wide
+            camera_movement: dolly_in
+            duration_seconds: 3.0
+            visual_description: "the Boss stands at the head of the boardroom table,
+              pointing at a pie chart that just says 'SYNERGY' in every slice,
+              gesturing wildly, the Corporate Choir seated around the table
+              nodding in perfect synchronization"
+            characters_present: [boss, choir]
+            dialogue: []
+            sound_effects:
+              - description: "laser pointer clicking"
+                intensity: 0.2
+            mood: "corporate theater"
+            lighting: "harsh boardroom fluorescent, TV glow"
+            location_id: boardroom
+            time_of_day: "morning"
+            transition_in: cut
+            transition_out: cut
+
+          - shot_id: v1_shot2
+            shot_type: close_up
+            camera_movement: static
+            duration_seconds: 2.0
+            visual_description: "extreme close-up of the Boss's mouth lip-syncing
+              'Touch base, ping me, close the loop' — teeth unnervingly white,
+              motivational headset mic visible"
+            characters_present: [boss]
+            dialogue: []
+            sound_effects: []
+            mood: "uncomfortable intimacy"
+            lighting: "flat corporate lighting"
+            location_id: boardroom
+            time_of_day: "morning"
+            transition_in: cut
+            transition_out: cut
+
+          - shot_id: v1_shot3
+            shot_type: medium
+            camera_movement: tracking
+            duration_seconds: 3.0
+            visual_description: "tracking shot along the boardroom table — each
+              Corporate Choir member lip-syncing a different buzzword simultaneously,
+              heads turning to camera one by one like a horror movie, forced smiles
+              never wavering"
+            characters_present: [choir]
+            dialogue: []
+            sound_effects:
+              - description: "pen clicking in rhythm with the beat"
+                intensity: 0.15
+            mood: "comedic unease"
+            lighting: "fluorescent overhead, each face identically lit"
+            location_id: boardroom
+            time_of_day: "morning"
+            transition_in: cut
+            transition_out: cut
+
+          - shot_id: v1_shot4
+            shot_type: medium_close
+            camera_movement: static
+            duration_seconds: 2.5
+            visual_description: "the Employee at the far end of the table, coffee
+              going cold, eyes glazing over, a single sticky note in front of them
+              reading 'WHY AM I HERE', lip-syncing 'Blue sky thinking, yes we can'
+              with maximum sarcasm"
+            characters_present: [protagonist]
+            dialogue: []
+            sound_effects: []
+            mood: "quiet rebellion brewing"
+            lighting: "slightly darker end of the table, alienated"
+            location_id: boardroom
+            time_of_day: "morning"
+            transition_in: cut
+            transition_out: cut
+
+          - shot_id: v1_shot5
+            shot_type: wide
+            camera_movement: crane_up
+            duration_seconds: 3.0
+            visual_description: "the Boss now standing ON the boardroom table,
+              power-posing like a motivational speaker, pointing finger-guns at
+              each person, the TV behind showing a stock photo of a handshake
+              with 'SYNERGY RISING' overlaid, the Choir applauding in unison"
+            characters_present: [boss, choir, protagonist]
+            dialogue: []
+            sound_effects:
+              - description: "synchronized clapping"
+                intensity: 0.3
+            mood: "peak absurdity"
+            lighting: "dramatic uplighting from the TV screen"
+            location_id: boardroom
+            time_of_day: "morning"
+            transition_in: cut
+            transition_out: cut
+
+          - shot_id: v1_shot6
+            shot_type: close_up
+            camera_movement: dolly_in
+            duration_seconds: 2.5
+            visual_description: "close-up of the Employee's face, a tic of
+              suppressed laughter or scream, lip-syncing 'Thought-leader ninja
+              in the room tonight' — the words visibly paining them, fluorescent
+              light reflecting in their dead eyes"
+            characters_present: [protagonist]
+            dialogue: []
+            sound_effects: []
+            mood: "existential breaking point"
+            lighting: "unflattering overhead fluorescent"
+            location_id: boardroom
+            time_of_day: "morning"
+            transition_in: cut
+            transition_out: cut
+
+          - shot_id: v1_shot7
+            shot_type: extreme_wide
+            camera_movement: static
+            duration_seconds: 3.0
+            visual_description: "wide shot of the entire boardroom from above,
+              everyone frozen in a tableau — the Boss mid-gesture, the Choir
+              mid-nod, the Employee the only one who looks up at the camera
+              with a 'help me' expression, the motivational poster behind them
+              reading 'IDEATION UNDER FLUORESCENT LIGHT'"
+            characters_present: [boss, choir, protagonist]
+            dialogue: []
+            sound_effects:
+              - description: "fluorescent tube flickering"
+                intensity: 0.2
+            mood: "trapped"
+            lighting: "harsh overhead, one tube flickering"
+            location_id: boardroom
+            time_of_day: "morning"
+            transition_in: cut
+            transition_out: cut
+
+      # ── PRE-CHORUS 1 (49.0-61.2s) ──
+      - scene_id: prechorus1
+        scene_number: 3
+        title: "Bandwidth Low"
+        description: "The Employee escapes the meeting into the break room and
+          elevator. Corporate phrases become increasingly oppressive."
+        location_id: breakroom
+        time_of_day: "morning"
+        mood: "claustrophobic, tension building"
+        music_direction: "building tension, drums intensifying, approaching chorus"
+        shots:
+          - shot_id: pc1_shot1
+            shot_type: medium
+            camera_movement: handheld
+            duration_seconds: 3.0
+            visual_description: "the Employee in the break room, alone, staring into
+              the microwave as something sad rotates inside, lip-syncing 'Bandwidth
+              low but we'll action that' to their own reflection in the microwave
+              door, motivational poster behind reading 'TAKE THIS OFFLINE'"
+            characters_present: [protagonist]
+            dialogue: []
+            sound_effects:
+              - description: "microwave humming"
+                intensity: 0.2
+            mood: "solitary desperation"
+            lighting: "sickly fluorescent, microwave glow"
+            location_id: breakroom
+            time_of_day: "morning"
+            transition_in: cut
+            transition_out: cut
+
+          - shot_id: pc1_shot2
+            shot_type: medium
+            camera_movement: static
+            duration_seconds: 3.0
+            visual_description: "the Employee in the elevator, doors closing, they
+              catch their reflection in the brushed steel — mouth the words
+              'Take this offline, put a pin in it soon' — the floor indicator
+              lights count down like a countdown clock, their expression hardening"
+            characters_present: [protagonist]
+            dialogue: []
+            sound_effects:
+              - description: "elevator ding, doors closing"
+                intensity: 0.3
+            mood: "mounting pressure"
+            lighting: "harsh overhead elevator light"
+            location_id: elevator
+            time_of_day: "morning"
+            transition_in: cut
+            transition_out: cut
+
+          - shot_id: pc1_shot3
+            shot_type: close_up
+            camera_movement: dolly_in
+            duration_seconds: 3.0
+            visual_description: "extreme close-up of the Employee's eyes, we see
+              the fluorescent lights reflected, a micro-expression of rage or
+              revelation, lip-syncing 'Hard stop coming this afternoon' — the
+              words finally feel like a threat, not a schedule note"
+            characters_present: [protagonist]
+            dialogue: []
+            sound_effects:
+              - description: "heartbeat-like bass thump synced to music"
+                intensity: 0.5
+            mood: "the fuse is lit"
+            lighting: "tight spotlight, rest in shadow"
+            location_id: elevator
+            time_of_day: "morning"
+            transition_in: cut
+            transition_out: smash_cut
+
+  - act_number: 2
+    title: "The Eruption"
+    scenes:
+      # ── CHORUS 1 (61.2-85.5s) ──
+      - scene_id: chorus1
+        scene_number: 4
+        title: "SYNERGY!"
+        description: "The chorus explodes. The all-hands stage becomes a manic
+          corporate rally. The Boss is a preacher, the Choir is a congregation,
+          and the Employee is losing their mind."
+        location_id: stage
+        time_of_day: "day"
+        mood: "unhinged corporate euphoria"
+        music_direction: "full chorus explosion, maximum energy, crowd chant"
+        shots:
+          - shot_id: ch1_shot1
+            shot_type: wide
+            camera_movement: crane_up
+            duration_seconds: 3.0
+            visual_description: "the all-hands stage erupts — fog machines blasting,
+              laser lights cutting through the fog, the Boss at the podium arms
+              raised like a rock star, the LED screen behind flashing 'SYNERGY!'
+              in massive letters, the Corporate Choir in the front row pumping
+              fists in unison"
+            characters_present: [boss, choir]
+            dialogue: []
+            sound_effects:
+              - description: "crowd roar, fog machine hiss"
+                intensity: 0.6
+            mood: "corporate Nuremberg rally"
+            lighting: "concert lighting, lasers, fog, strobes"
+            location_id: stage
+            time_of_day: "day"
+            transition_in: smash_cut
+            transition_out: cut
+
+          - shot_id: ch1_shot2
+            shot_type: medium
+            camera_movement: handheld
+            duration_seconds: 2.5
+            visual_description: "handheld shot in the crowd — the Employee pushed
+              and jostled, everyone around them screaming 'SYNERGY' with cult-like
+              fervor, the Employee lip-syncing along but their eyes say murder,
+              laser lights sweeping across faces"
+            characters_present: [protagonist, choir]
+            dialogue: []
+            sound_effects: []
+            mood: "manic, overwhelming"
+            lighting: "chaotic concert lighting, faces lit in alternating colors"
+            location_id: stage
+            time_of_day: "day"
+            transition_in: cut
+            transition_out: cut
+
+          - shot_id: ch1_shot3
+            shot_type: close_up
+            camera_movement: static
+            duration_seconds: 2.0
+            visual_description: "rapid-cut close-ups: the Boss's mouth screaming
+              'MOVE THE NEEDLE', a hand slamming a desk, the pie chart spinning
+              on the LED screen, the Employee's coffee cup vibrating off a table,
+              a motivational poster falling off a wall"
+            characters_present: [boss, protagonist]
+            dialogue: []
+            sound_effects:
+              - description: "glass breaking, desk slam"
+                intensity: 0.5
+            mood: "sensory overload"
+            lighting: "strobing, unstable"
+            location_id: stage
+            time_of_day: "day"
+            transition_in: cut
+            transition_out: cut
+
+          - shot_id: ch1_shot4
+            shot_type: wide
+            camera_movement: tracking
+            duration_seconds: 3.0
+            visual_description: "the Corporate Choir now on stage in a V-formation
+              behind the Boss, doing synchronized choreography — corporate
+              finger-pointing, handshake miming, power poses — lip-syncing
+              'ROCKSTAR! NINJA! CROSS-FUNCTIONAL TEAM!' with terrifying
+              enthusiasm, fog swirling at their feet"
+            characters_present: [boss, choir]
+            dialogue: []
+            sound_effects:
+              - description: "synchronized stomping"
+                intensity: 0.4
+            mood: "choreographed madness"
+            lighting: "uplighting through fog, dramatic silhouettes"
+            location_id: stage
+            time_of_day: "day"
+            transition_in: cut
+            transition_out: cut
+
+          - shot_id: ch1_shot5
+            shot_type: medium_close
+            camera_movement: dolly_in
+            duration_seconds: 2.5
+            visual_description: "the Employee at the back of the audience, the only
+              still figure in a sea of pumping fists, lip-syncing 'HOLISTIC
+              CORPORATE DREAM' — but their face cracks into an involuntary
+              genuine laugh, the absurdity finally hitting them"
+            characters_present: [protagonist]
+            dialogue: []
+            sound_effects: []
+            mood: "breakthrough moment — the laugh"
+            lighting: "backlit by stage lights, face half in shadow"
+            location_id: stage
+            time_of_day: "day"
+            transition_in: cut
+            transition_out: cut
+
+      # ── VERSE 2 (85.5-109.8s) ──
+      - scene_id: verse2
+        scene_number: 5
+        title: "The Labyrinth"
+        description: "Back to work but now the office has become surreal. Cubicle
+          walls multiply impossibly. The Employee navigates corporate absurdity
+          made physical."
+        location_id: cubicle_maze
+        time_of_day: "afternoon"
+        mood: "surreal, disorienting, darkly funny"
+        music_direction: "verse 2 groove, slightly more unhinged than verse 1"
+        shots:
+          - shot_id: v2_shot1
+            shot_type: wide
+            camera_movement: tracking
+            duration_seconds: 3.0
+            visual_description: "the Employee walks through an impossible Escher-like
+              maze of cubicle walls that stretch infinitely, papers floating in
+              the air, phones ringing from every direction, they lip-sync 'Deep
+              dive strategy temperature check' while navigating the labyrinth"
+            characters_present: [protagonist]
+            dialogue: []
+            sound_effects:
+              - description: "phones ringing from multiple directions, papers rustling"
+                intensity: 0.4
+            mood: "Kafkaesque"
+            lighting: "fluorescent tubes at impossible angles"
+            location_id: cubicle_maze
+            time_of_day: "afternoon"
+            transition_in: cut
+            transition_out: cut
+
+          - shot_id: v2_shot2
+            shot_type: medium
+            camera_movement: handheld
+            duration_seconds: 3.0
+            visual_description: "the Employee turns a corner and finds the Boss
+              sitting on a throne made of stacked office chairs, surrounded by
+              the Choir fanning them with printed PowerPoints, the Boss points
+              at the Employee and mouths 'BANDWIDTH CONSTRAINTS' accusingly"
+            characters_present: [protagonist, boss, choir]
+            dialogue: []
+            sound_effects:
+              - description: "throne of chairs creaking"
+                intensity: 0.2
+            mood: "absurdist power dynamics"
+            lighting: "spotlight on the throne, rest in shadow"
+            location_id: cubicle_maze
+            time_of_day: "afternoon"
+            transition_in: cut
+            transition_out: cut
+
+          - shot_id: v2_shot3
+            shot_type: medium_close
+            camera_movement: dolly_in
+            duration_seconds: 3.0
+            visual_description: "the Employee at a desk that keeps getting smaller,
+              the walls closing in, sticky notes appearing on every surface with
+              buzzwords — 'PIVOT', 'ALIGN', 'CIRCLE BACK' — they lip-sync
+              'Heavy lifting in the status quo' while physically pushing against
+              the closing walls"
+            characters_present: [protagonist]
+            dialogue: []
+            sound_effects:
+              - description: "walls scraping, sticky notes peeling"
+                intensity: 0.3
+            mood: "claustrophobic satire"
+            lighting: "increasingly tight, shadows closing in"
+            location_id: cubicle_maze
+            time_of_day: "afternoon"
+            transition_in: cut
+            transition_out: cut
+
+          - shot_id: v2_shot4
+            shot_type: wide
+            camera_movement: crane_up
+            duration_seconds: 3.0
+            visual_description: "overhead shot — the Employee looks up through the
+              cubicle maze, we see they're in the center of an enormous corporate
+              logo shape made of cubicle walls, they don't know it but we do,
+              lip-syncing 'Pivot faster when the numbers aren't right'"
+            characters_present: [protagonist]
+            dialogue: []
+            sound_effects: []
+            mood: "trapped in the machine"
+            lighting: "God's-eye fluorescent grid"
+            location_id: cubicle_maze
+            time_of_day: "afternoon"
+            transition_in: cut
+            transition_out: cut
+
+      # ── PRE-CHORUS 2 (109.8-121.9s) ──
+      - scene_id: prechorus2
+        scene_number: 6
+        title: "Per My Last Email"
+        description: "The Employee finds a moment of deadpan clarity in the chaos.
+          Reading corporate emails like hostage notes."
+        location_id: open_office
+        time_of_day: "afternoon"
+        mood: "deadpan fury"
+        music_direction: "tension building again, drums marching"
+        shots:
+          - shot_id: pc2_shot1
+            shot_type: close_up
+            camera_movement: static
+            duration_seconds: 3.0
+            visual_description: "the Employee at their desk, reading their screen,
+              lip-syncing 'Please do the needful before EOD' in a perfect deadpan,
+              a single tear of boredom or rage rolling down their cheek, they
+              don't blink"
+            characters_present: [protagonist]
+            dialogue: []
+            sound_effects:
+              - description: "keyboard typing, email notification"
+                intensity: 0.2
+            mood: "deadpan perfection"
+            lighting: "monitor glow, fluorescent overhead"
+            location_id: open_office
+            time_of_day: "afternoon"
+            transition_in: cut
+            transition_out: cut
+
+          - shot_id: pc2_shot2
+            shot_type: medium
+            camera_movement: tracking
+            duration_seconds: 3.0
+            visual_description: "the Employee stands up from their desk, rips off
+              their lanyard, tosses it on the desk — lip-syncing 'Hard stop
+              coming — keep it on track' — walking toward the door with purpose,
+              the Corporate Choir watching in horror from their desks"
+            characters_present: [protagonist, choir]
+            dialogue: []
+            sound_effects:
+              - description: "lanyard hitting desk, chair rolling back"
+                intensity: 0.3
+            mood: "the break"
+            lighting: "fluorescent, but the Employee seems to glow"
+            location_id: open_office
+            time_of_day: "afternoon"
+            transition_in: cut
+            transition_out: smash_cut
+
+      # ── CHORUS 2 (121.9-146.2s) ──
+      - scene_id: chorus2
+        scene_number: 7
+        title: "SYNERGY! ROUND 2"
+        description: "Second chorus is bigger, crazier. The Employee has snapped
+          and is now performing ON the boardroom table. The corporate structure
+          is crumbling."
+        location_id: boardroom
+        time_of_day: "afternoon"
+        mood: "liberated chaos, joyful destruction"
+        music_direction: "chorus 2, even bigger, crowd chant intensity"
+        shots:
+          - shot_id: ch2_shot1
+            shot_type: wide
+            camera_movement: handheld
+            duration_seconds: 3.0
+            visual_description: "the Employee is now the one standing on the
+              boardroom table, tie loosened, sleeves rolled up, pointing at
+              the stunned Boss and Choir, lip-syncing 'SYNERGY! SYNERGY!'
+              with genuine punk energy, kicking papers off the table"
+            characters_present: [protagonist, boss, choir]
+            dialogue: []
+            sound_effects:
+              - description: "papers flying, glass of water toppling"
+                intensity: 0.4
+            mood: "revolutionary joy"
+            lighting: "fluorescent flickering, chaotic"
+            location_id: boardroom
+            time_of_day: "afternoon"
+            transition_in: smash_cut
+            transition_out: cut
+
+          - shot_id: ch2_shot2
+            shot_type: medium
+            camera_movement: tracking
+            duration_seconds: 3.0
+            visual_description: "the Corporate Choir starts to crack — one by one
+              their forced smiles turn genuine, they start loosening ties,
+              unbuttoning polos, joining the Employee's energy, lip-syncing
+              'LOW-HANGING FRUIT' while tearing motivational posters off walls"
+            characters_present: [choir]
+            dialogue: []
+            sound_effects:
+              - description: "posters ripping, laughter"
+                intensity: 0.4
+            mood: "contagious liberation"
+            lighting: "warmer, more natural as fluorescents flicker out"
+            location_id: boardroom
+            time_of_day: "afternoon"
+            transition_in: cut
+            transition_out: cut
+
+          - shot_id: ch2_shot3
+            shot_type: close_up
+            camera_movement: handheld
+            duration_seconds: 2.5
+            visual_description: "the Boss watching in disbelief, headset mic hanging
+              off one ear, mouth agape, the LED screen behind them glitching,
+              showing 'SYNERGY ERROR 404', a single motivational poster falls
+              and hits them on the head"
+            characters_present: [boss]
+            dialogue: []
+            sound_effects:
+              - description: "screen glitching, poster hitting head"
+                intensity: 0.3
+            mood: "the emperor has no clothes"
+            lighting: "glitching LED screen light"
+            location_id: boardroom
+            time_of_day: "afternoon"
+            transition_in: cut
+            transition_out: cut
+
+          - shot_id: ch2_shot4
+            shot_type: wide
+            camera_movement: crane_up
+            duration_seconds: 3.5
+            visual_description: "the entire boardroom is now a mosh pit — the
+              Employee and the Choir jumping and headbanging, papers and sticky
+              notes raining from the ceiling, the pie chart on the TV spinning
+              wildly, lip-syncing 'BUZZWORDS SCREAMING LOUD' — pure catharsis"
+            characters_present: [protagonist, choir]
+            dialogue: []
+            sound_effects:
+              - description: "joyful chaos, stomping, laughing"
+                intensity: 0.6
+            mood: "cathartic destruction"
+            lighting: "flickering fluorescent creating strobe effect"
+            location_id: boardroom
+            time_of_day: "afternoon"
+            transition_in: cut
+            transition_out: dissolve
+
+      # ── BRIDGE (146.2-155.3s) ──
+      - scene_id: bridge
+        scene_number: 8
+        title: "It Is What It Is"
+        description: "The calm after the storm. The Employee alone in the wreckage
+          of the boardroom. A moment of clarity."
+        location_id: boardroom
+        time_of_day: "afternoon"
+        mood: "exhausted clarity, zen acceptance"
+        music_direction: "stripped back, just vocals and sparse instrumentation"
+        shots:
+          - shot_id: bridge_shot1
+            shot_type: wide
+            camera_movement: static
+            duration_seconds: 4.5
+            visual_description: "the boardroom is destroyed — papers everywhere,
+              chairs overturned, motivational posters torn, the TV showing
+              static, the Employee sits alone in one remaining upright chair
+              at the center of the wreckage, quiet, lip-syncing 'Bandwidth...
+              Heavy lifting... Circle back...' each word slower and more tired"
+            characters_present: [protagonist]
+            dialogue: []
+            sound_effects:
+              - description: "settling debris, distant ventilation hum"
+                intensity: 0.15
+            mood: "post-destruction serenity"
+            lighting: "natural light from windows, fluorescents dead"
+            location_id: boardroom
+            time_of_day: "afternoon"
+            transition_in: dissolve
+            transition_out: cut
+
+          - shot_id: bridge_shot2
+            shot_type: close_up
+            camera_movement: dolly_in
+            duration_seconds: 4.5
+            visual_description: "close-up of the Employee's face — genuinely calm
+              for the first time, a real smile, they lip-sync 'It is what it is'
+              and it sounds like the most profound thing ever said, they look
+              directly into camera, then stand up"
+            characters_present: [protagonist]
+            dialogue: []
+            sound_effects: []
+            mood: "transcendent acceptance"
+            lighting: "warm window light, first natural light in the video"
+            location_id: boardroom
+            time_of_day: "afternoon"
+            transition_in: cut
+            transition_out: cut
+
+      # ── GUITAR SOLO (155.3-177.8s) ──
+      - scene_id: guitar_solo
+        scene_number: 9
+        title: "The Walk Out"
+        description: "No lyrics — pure visual storytelling. The Employee walks out
+          of the building in slow motion. Corporate life plays in reverse
+          behind them."
+        location_id: open_office
+        time_of_day: "afternoon"
+        mood: "triumphant liberation, slow-motion cool"
+        music_direction: "guitar solo — soaring, liberating, emotional"
+        shots:
+          - shot_id: solo_shot1
+            shot_type: medium
+            camera_movement: tracking
+            duration_seconds: 5.0
+            visual_description: "slow-motion tracking shot following the Employee
+              walking through the open-plan office toward the exit, shirt untucked,
+              badge swinging from their hand, everyone at their desks frozen
+              staring, papers still drifting down from the boardroom destruction,
+              natural golden light streaming through the windows for the first time"
+            characters_present: [protagonist, choir]
+            dialogue: []
+            sound_effects:
+              - description: "slow-motion whoosh, muffled office sounds"
+                intensity: 0.2
+            mood: "cinematic cool"
+            lighting: "golden hour light finally reaching the office"
+            location_id: open_office
+            time_of_day: "golden_hour"
+            transition_in: cut
+            transition_out: cut
+
+          - shot_id: solo_shot2
+            shot_type: wide
+            camera_movement: dolly_out
+            duration_seconds: 4.0
+            visual_description: "the Employee pushes through the glass doors of the
+              building, slow-motion, the outside light hits them like a
+              baptism, they drop their badge on the ground, the wind catches
+              their unbuttoned shirt, freedom incarnate"
+            characters_present: [protagonist]
+            dialogue: []
+            sound_effects:
+              - description: "glass doors opening, wind rushing in"
+                intensity: 0.3
+            mood: "rebirth"
+            lighting: "golden hour backlight, lens flare"
+            location_id: parking_lot
+            time_of_day: "golden_hour"
+            transition_in: cut
+            transition_out: cut
+
+          - shot_id: solo_shot3
+            shot_type: extreme_wide
+            camera_movement: crane_up
+            duration_seconds: 5.0
+            visual_description: "aerial shot pulling up and away from the Employee
+              standing alone in the vast empty parking lot, the corporate building
+              looming behind them, but they're facing the other direction — toward
+              the sunset, the open road, city skyline in the distance, arms spread"
+            characters_present: [protagonist]
+            dialogue: []
+            sound_effects:
+              - description: "wind, distant city sounds"
+                intensity: 0.2
+            mood: "epic liberation"
+            lighting: "golden hour, long shadows, cinematic"
+            location_id: parking_lot
+            time_of_day: "golden_hour"
+            transition_in: cut
+            transition_out: cut
+
+          - shot_id: solo_shot4
+            shot_type: extreme_wide
+            camera_movement: static
+            duration_seconds: 4.0
+            visual_description: "silhouette of the Employee on the building rooftop
+              at sunset, city skyline stretching behind them, wind in their hair,
+              they look out at the world with genuine wonder — the same person
+              who walked in dead-eyed this morning, transformed"
+            characters_present: [protagonist]
+            dialogue: []
+            sound_effects:
+              - description: "wind, quiet city ambience"
+                intensity: 0.2
+            mood: "beauty, possibility"
+            lighting: "sunset silhouette, golden rim light"
+            location_id: rooftop
+            time_of_day: "golden_hour"
+            transition_in: cut
+            transition_out: smash_cut
+
+  - act_number: 3
+    title: "The Encore"
+    scenes:
+      # ── BREAKDOWN (177.8-193.7s) ──
+      - scene_id: breakdown
+        scene_number: 10
+        title: "Put a Pin in It"
+        description: "The Employee is back — but this time they OWN the buzzwords.
+          Each phrase is delivered like a rallying cry, taking back the language."
+        location_id: stage
+        time_of_day: "evening"
+        mood: "reclaimed power, punk anthem"
+        music_direction: "breakdown, staccato hits, call and response"
+        shots:
+          - shot_id: bd_shot1
+            shot_type: medium_close
+            camera_movement: handheld
+            duration_seconds: 4.0
+            visual_description: "the Employee is now on the all-hands stage, but
+              the corporate branding is torn down — raw stage lights, no fog,
+              no BS — they lip-sync 'Put a pin in it! Take it offline!' like
+              punk lyrics, pointing at the camera, the old Choir members in the
+              audience cheering genuinely, no longer in matching polos"
+            characters_present: [protagonist, choir]
+            dialogue: []
+            sound_effects:
+              - description: "crowd cheering, stomping"
+                intensity: 0.5
+            mood: "empowered"
+            lighting: "raw stage lights, honest"
+            location_id: stage
+            time_of_day: "evening"
+            transition_in: smash_cut
+            transition_out: cut
+
+          - shot_id: bd_shot2
+            shot_type: wide
+            camera_movement: tracking
+            duration_seconds: 4.0
+            visual_description: "the audience (former Corporate Choir) doing a
+              call-and-response, fists in the air — they're owning the buzzwords
+              now, 'PING ME LATER!' as a battle cry, the Boss is in the
+              audience too, headset off, actually having fun for the first
+              time, loosened tie"
+            characters_present: [protagonist, choir, boss]
+            dialogue: []
+            sound_effects:
+              - description: "call and response crowd"
+                intensity: 0.5
+            mood: "unity through absurdity"
+            lighting: "warm stage wash, no more cold fluorescent"
+            location_id: stage
+            time_of_day: "evening"
+            transition_in: cut
+            transition_out: cut
+
+      # ── FINAL CHORUS (193.7-215.9s) ──
+      - scene_id: final_chorus
+        scene_number: 11
+        title: "SYNERGY! — THE FINAL FORM"
+        description: "The biggest chorus. Everyone together — Employee, Choir, Boss
+          — but now it's genuine. The buzzwords are reclaimed as absurdist
+          celebration."
+        location_id: stage
+        time_of_day: "evening"
+        mood: "triumphant, joyful, earned catharsis"
+        music_direction: "final chorus, biggest arrangement, everything at 11"
+        shots:
+          - shot_id: fc_shot1
+            shot_type: wide
+            camera_movement: crane_up
+            duration_seconds: 4.0
+            visual_description: "the stage is packed — everyone together, the
+              Employee center stage, the Boss and Choir flanking them, all
+              lip-syncing 'SYNERGY! SYNERGY!' but now it's a celebration not
+              a cult, confetti (made of shredded motivational posters) raining
+              down, real smiles, real energy"
+            characters_present: [protagonist, boss, choir]
+            dialogue: []
+            sound_effects:
+              - description: "confetti cannon, genuine crowd roar"
+                intensity: 0.7
+            mood: "earned euphoria"
+            lighting: "warm concert lighting, golden tones"
+            location_id: stage
+            time_of_day: "evening"
+            transition_in: cut
+            transition_out: cut
+
+          - shot_id: fc_shot2
+            shot_type: medium
+            camera_movement: handheld
+            duration_seconds: 3.0
+            visual_description: "rapid montage — the Employee screaming 'BLUE SKY
+              THINKING!' with joy, the Boss doing an ironic power-pose and
+              laughing at themselves, the Choir throwing their matching polos
+              into the crowd, everyone unified in the absurdity"
+            characters_present: [protagonist, boss, choir]
+            dialogue: []
+            sound_effects: []
+            mood: "pure joy"
+            lighting: "warm, dynamic, alive"
+            location_id: stage
+            time_of_day: "evening"
+            transition_in: cut
+            transition_out: cut
+
+          - shot_id: fc_shot3
+            shot_type: close_up
+            camera_movement: dolly_in
+            duration_seconds: 3.0
+            visual_description: "the Employee lip-syncing 'LEAN IN! LEAN IN!' and
+              literally leaning into camera until their face fills the frame,
+              grinning, sweat on their forehead, confetti in their hair — they
+              mean it now, the words transformed from corporate to human"
+            characters_present: [protagonist]
+            dialogue: []
+            sound_effects: []
+            mood: "connection"
+            lighting: "warm close spotlight"
+            location_id: stage
+            time_of_day: "evening"
+            transition_in: cut
+            transition_out: cut
+
+          - shot_id: fc_shot4
+            shot_type: extreme_wide
+            camera_movement: crane_up
+            duration_seconds: 4.0
+            visual_description: "the camera pulls up and away from the stage,
+              revealing the entire crowd — all former office workers, all free,
+              all celebrating, the shredded motivational posters still falling
+              like snow, the LED screen behind showing nothing but warm golden
+              light, lip-syncing 'CLOSE THE LOOP — WE'RE THROUGH!' as one voice"
+            characters_present: [protagonist, boss, choir]
+            dialogue: []
+            sound_effects:
+              - description: "massive crowd, stomping, celebration"
+                intensity: 0.7
+            mood: "catharsis, closure"
+            lighting: "golden wash, warm, expansive"
+            location_id: stage
+            time_of_day: "evening"
+            transition_in: cut
+            transition_out: dissolve
+
+      # ── OUTRO (215.9-226.7s) ──
+      - scene_id: outro
+        scene_number: 12
+        title: "Great Meeting"
+        description: "Back to the boardroom. But everything is different now."
+        location_id: boardroom
+        time_of_day: "morning"
+        mood: "warm irony, earned peace"
+        music_direction: "outro, winding down, final notes"
+        shots:
+          - shot_id: outro_shot1
+            shot_type: medium
+            camera_movement: static
+            duration_seconds: 5.0
+            visual_description: "next morning — the boardroom has been cleaned up,
+              new motivational poster on the wall: 'IT IS WHAT IT IS'. The
+              Employee walks in with coffee, sits down, the Boss enters with
+              a sheepish grin, the Choir files in wearing whatever they want
+              (no more matching polos), the Employee lip-syncs 'Great meeting
+              everyone...' with a genuine warm smile to camera"
+            characters_present: [protagonist, boss, choir]
+            dialogue: []
+            sound_effects:
+              - description: "coffee cup placed on table, quiet morning"
+                intensity: 0.15
+            mood: "earned normalcy"
+            lighting: "warm morning light through windows, fluorescents off"
+            location_id: boardroom
+            time_of_day: "morning"
+            transition_in: dissolve
+            transition_out: cut
+
+          - shot_id: outro_shot2
+            shot_type: close_up
+            camera_movement: dolly_in
+            duration_seconds: 4.0
+            visual_description: "close-up of the Employee, looking at camera,
+              lip-syncing 'We really moved the needle' — and for the first
+              time, it might actually be true, a genuine wink to camera,
+              freeze frame, the frame gains a subtle film grain and the
+              colors warm, a title card fades in over the frozen image"
+            characters_present: [protagonist]
+            dialogue: []
+            sound_effects: []
+            mood: "perfect landing"
+            lighting: "warm natural light, golden"
+            location_id: boardroom
+            time_of_day: "morning"
+            transition_in: cut
+            transition_out: freeze_frame
