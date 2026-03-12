@@ -149,7 +149,7 @@ acts:
 
           - shot_id: intro_shot3
             shot_type: medium
-            camera_movement: pan
+            camera_movement: pan_right
             duration_seconds: 3.5
             visual_description: "slow pan across a row of motivational posters on
               the wall — 'DISRUPT THE STATUS QUO', 'BE A ROCKSTAR', 'PIVOT OR DIE'
@@ -1067,4 +1067,4 @@ acts:
             location_id: boardroom
             time_of_day: "morning"
             transition_in: cut
-            transition_out: freeze_frame
+            transition_out: fade_to_black
