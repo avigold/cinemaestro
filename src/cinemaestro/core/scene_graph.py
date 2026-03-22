@@ -12,7 +12,7 @@ from __future__ import annotations
 
 from enum import Enum
 
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, Field, field_validator, model_validator
 
 
 class CameraMovement(str, Enum):
@@ -81,6 +81,30 @@ class SoundEffect(BaseModel):
     intensity: float = 0.7  # 0.0 to 1.0
     spatial: str = ""  # "left", "right", "center", "ambient"
 
+    @field_validator("intensity", mode="before")
+    @classmethod
+    def _coerce_intensity(cls, v: object) -> float:
+        if isinstance(v, (int, float)):
+            return float(v)
+        if isinstance(v, str):
+            mapping = {
+                "very_low": 0.2, "very low": 0.2,
+                "low": 0.3,
+                "medium_low": 0.4, "medium low": 0.4,
+                "medium": 0.5,
+                "medium_high": 0.6, "medium high": 0.6,
+                "high": 0.8,
+                "very_high": 0.9, "very high": 0.9,
+            }
+            key = str(v).strip().lower()
+            if key in mapping:
+                return mapping[key]
+            try:
+                return float(v)
+            except ValueError:
+                return 0.5
+        return 0.5
+
 
 class Shot(BaseModel):
     """A single camera shot — the atomic unit of visual generation."""
@@ -118,15 +142,32 @@ class Shot(BaseModel):
 class Scene(BaseModel):
     """A continuous sequence at a single location — contains multiple shots."""
 
-    scene_id: str
-    scene_number: int
+    scene_id: str = ""
+    scene_number: int = 0
     title: str = ""
-    description: str  # prose description of the scene's purpose and content
-    location_id: str
+    description: str = ""  # prose description of the scene's purpose and content
+    location_id: str = ""
     time_of_day: str = "day"
     mood: str = ""
     music_direction: str = ""  # "slow piano, melancholic", "tense strings building"
     shots: list[Shot] = Field(default_factory=list)
+
+    @model_validator(mode="before")
+    @classmethod
+    def _fill_missing(cls, data: dict) -> dict:  # type: ignore[override]
+        if not isinstance(data, dict):
+            return data
+        # Derive scene_id from scene_number if missing
+        if not data.get("scene_id") and data.get("scene_number"):
+            data["scene_id"] = f"scene_{data['scene_number']}"
+        # Derive scene_number from scene_id if missing
+        if not data.get("scene_number") and data.get("scene_id"):
+            # Try to extract a number from the scene_id
+            import re
+            m = re.search(r"(\d+)", str(data["scene_id"]))
+            if m:
+                data["scene_number"] = int(m.group(1))
+        return data
 
     @property
     def duration_seconds(self) -> float:
@@ -167,9 +208,22 @@ class CharacterAppearance(BaseModel):
 class Act(BaseModel):
     """A major section of the film — maps to traditional act structure."""
 
-    act_number: int
+    act_number: int = 0
     title: str = ""
     scenes: list[Scene] = Field(default_factory=list)
+
+    @model_validator(mode="before")
+    @classmethod
+    def _fill_missing(cls, data: dict) -> dict:  # type: ignore[override]
+        if not isinstance(data, dict):
+            return data
+        # Derive act_number from act_id if missing
+        if not data.get("act_number") and data.get("act_id"):
+            import re
+            m = re.search(r"(\d+)", str(data["act_id"]))
+            if m:
+                data["act_number"] = int(m.group(1))
+        return data
 
     @property
     def duration_seconds(self) -> float:
