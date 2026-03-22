@@ -233,6 +233,26 @@ class PipelineOrchestrator:
         if tasks:
             await asyncio.gather(*tasks, return_exceptions=True)
 
+        # Check if any shots actually produced video files
+        failed_shots = [
+            (sid, ss.error)
+            for sid, ss in self.state.shots.items()
+            if ss.status == StageStatus.FAILED
+        ]
+        succeeded = sum(
+            1 for ss in self.state.shots.values()
+            if ss.status == StageStatus.COMPLETED
+        )
+
+        if succeeded == 0 and failed_shots:
+            errors = "; ".join(f"{sid}: {err}" for sid, err in failed_shots[:5])
+            self.state.mark_stage_failed("visual", errors)
+            self.state.save(self.project.pipeline_state_path)
+            raise RuntimeError(
+                f"Visual generation failed: all {len(failed_shots)} shots failed. "
+                f"First errors: {errors}"
+            )
+
         self.state.mark_stage_completed("visual")
         self.state.save(self.project.pipeline_state_path)
         await self._emit(EventType.STAGE_COMPLETE, stage="visual")
